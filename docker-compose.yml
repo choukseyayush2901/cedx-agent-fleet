@@ -1,0 +1,15 @@
+services:
+  cedx-agent-fleet:
+    build: .
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: file:./dev.db
+      REPLAY_LLM: "true"
+      SEED_DIR: seed
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./out:/app/out
+      - ./transcripts:/app/transcripts
+    command: sh -c "npm run prisma:push && npm start"

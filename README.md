@@ -2,7 +2,7 @@
 
 ## 1 Industry & Scope
 
-Industry: Operations workflow automation. Tier: governed back-office work requests. CASE_ID: `CEDX-XXXX`.
+Industry: Operations workflow automation. Tier: governed back-office work requests. CASE_ID: `CEDX-A51B04`.
 
 The system processes feed, PDF, and email work requests through the CEDX five-stage governed pipeline and emits `out/package.json`, `out/audit.json`, and replay transcripts.
 
